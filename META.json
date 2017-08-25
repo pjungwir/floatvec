@@ -3,7 +3,7 @@
   "abstract": "Functions for arithmetric on numeric arrays",
   "version": "1.0.0",
   "maintainer": "Paul A. Jungwirth <pj@illuminatedcomputing.com>",
-  "license": "MIT",
+  "license": "mit",
   "provides": {
     "floatvec": {
       "abstract": "Functions for arithmetric on numeric arrays",

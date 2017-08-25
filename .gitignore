@@ -2,4 +2,5 @@
 *.so
 .*.swp
 .*.swo
+/floatvec-*.zip
 

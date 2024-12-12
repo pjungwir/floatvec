@@ -1,0 +1,168 @@
+-- float add to scalar lhs
+SELECT vec_add(5::float, floats) FROM measurements WHERE sensor_id IN (4);
+  vec_add   
+------------
+ {6,NULL,7}
+(1 row)
+
+-- float add to scalar rhs
+SELECT vec_add(floats, 5::float) FROM measurements WHERE sensor_id IN (4);
+  vec_add   
+------------
+ {6,NULL,7}
+(1 row)
+
+-- float add to array
+SELECT vec_add(floats, floats) FROM measurements WHERE sensor_id IN (4);
+  vec_add   
+------------
+ {2,NULL,4}
+(1 row)
+
+-- float add to null scalar lhs
+SELECT vec_add(NULL::float, floats) FROM measurements WHERE sensor_id IN (4);
+     vec_add      
+------------------
+ {NULL,NULL,NULL}
+(1 row)
+
+-- float add to null scalar rhs
+SELECT vec_add(floats, NULL::float) FROM measurements WHERE sensor_id IN (4);
+     vec_add      
+------------------
+ {NULL,NULL,NULL}
+(1 row)
+
+-- float add scalar to null array lhs
+SELECT vec_add(5::float, NULL::float[]) FROM measurements WHERE sensor_id IN (4);
+ vec_add 
+---------
+ 
+(1 row)
+
+-- float add scalar to null array rhs
+SELECT vec_add(NULL::float[], 5::float) FROM measurements WHERE sensor_id IN (4);
+ vec_add 
+---------
+ 
+(1 row)
+
+-- float add to null array lhs
+SELECT vec_add(floats, NULL::float[]) FROM measurements WHERE sensor_id IN (4);
+ vec_add 
+---------
+ 
+(1 row)
+
+-- float add to null array rhs
+SELECT vec_add(NULL::float[], floats) FROM measurements WHERE sensor_id IN (4);
+ vec_add 
+---------
+ 
+(1 row)
+
+-- null float add to null scalar lhs
+SELECT vec_add(NULL::float, NULL::float[]) FROM measurements WHERE sensor_id IN (4);
+ vec_add 
+---------
+ 
+(1 row)
+
+-- null float add to null scalar rhs
+SELECT vec_add(NULL::float[], NULL::float) FROM measurements WHERE sensor_id IN (4);
+ vec_add 
+---------
+ 
+(1 row)
+
+-- null float add to null array
+SELECT vec_add(NULL::float[], NULL::float[]) FROM measurements WHERE sensor_id IN (4);
+ vec_add 
+---------
+ 
+(1 row)
+
+-- int add to scalar lhs
+SELECT vec_add(5::int, ints) FROM measurements WHERE sensor_id IN (4);
+  vec_add   
+------------
+ {6,NULL,7}
+(1 row)
+
+-- int add to scalar rhs
+SELECT vec_add(ints, 5::int) FROM measurements WHERE sensor_id IN (4);
+  vec_add   
+------------
+ {6,NULL,7}
+(1 row)
+
+-- int add to array
+SELECT vec_add(ints, ints) FROM measurements WHERE sensor_id IN (4);
+  vec_add   
+------------
+ {2,NULL,4}
+(1 row)
+
+-- int add to null scalar lhs
+SELECT vec_add(NULL::int, ints) FROM measurements WHERE sensor_id IN (4);
+     vec_add      
+------------------
+ {NULL,NULL,NULL}
+(1 row)
+
+-- int add to null scalar rhs
+SELECT vec_add(ints, NULL::int) FROM measurements WHERE sensor_id IN (4);
+     vec_add      
+------------------
+ {NULL,NULL,NULL}
+(1 row)
+
+-- int add scalar to null array lhs
+SELECT vec_add(5::int, NULL::int[]) FROM measurements WHERE sensor_id IN (4);
+ vec_add 
+---------
+ 
+(1 row)
+
+-- int add scalar to null array rhs
+SELECT vec_add(NULL::int[], 5::int) FROM measurements WHERE sensor_id IN (4);
+ vec_add 
+---------
+ 
+(1 row)
+
+-- int add to null array lhs
+SELECT vec_add(ints, NULL::int[]) FROM measurements WHERE sensor_id IN (4);
+ vec_add 
+---------
+ 
+(1 row)
+
+-- int add to null array rhs
+SELECT vec_add(NULL::int[], ints) FROM measurements WHERE sensor_id IN (4);
+ vec_add 
+---------
+ 
+(1 row)
+
+-- null int add to null scalar lhs
+SELECT vec_add(NULL::int, NULL::int[]) FROM measurements WHERE sensor_id IN (4);
+ vec_add 
+---------
+ 
+(1 row)
+
+-- null int add to null scalar rhs
+SELECT vec_add(NULL::int[], NULL::int) FROM measurements WHERE sensor_id IN (4);
+ vec_add 
+---------
+ 
+(1 row)
+
+-- null int add to null array
+SELECT vec_add(NULL::int[], NULL::int[]) FROM measurements WHERE sensor_id IN (4);
+ vec_add 
+---------
+ 
+(1 row)
+

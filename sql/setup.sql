@@ -1,5 +1,3 @@
-BEGIN; 
-
 DROP TABLE IF EXISTS measurements;
 CREATE TABLE measurements (
   sensor_id INTEGER PRIMARY KEY,
@@ -16,4 +14,4 @@ VALUES
 (4, ARRAY[1, NULL, 2], ARRAY[1, NULL, 2])
 ;
 
-COMMIT;
+CREATE EXTENSION floatvec;

@@ -1,6 +1,6 @@
 MODULES = floatvec
 EXTENSION = floatvec
-EXTENSION_VERSION = 1.0.1
+EXTENSION_VERSION = 1.1.0
 DATA = floatvec--$(EXTENSION_VERSION).sql
 
 PG_CONFIG = pg_config

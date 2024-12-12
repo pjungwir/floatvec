@@ -13,4 +13,4 @@ PG_MODULE_MAGIC;
 #include "vec_mul.c"
 #include "vec_div.c"
 #include "vec_pow.c"
-
+#include "vec_elements.c"

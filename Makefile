@@ -12,6 +12,7 @@ test:
 	PATH="./test/bats:$$PATH" bats test
 
 release:
+	git tag v$(EXTENSION_VERSION)
 	git archive --format zip --prefix=$(EXTENSION)-$(EXTENSION_VERSION)/ --output $(EXTENSION)-$(EXTENSION_VERSION).zip master
 
 .PHONY: test release

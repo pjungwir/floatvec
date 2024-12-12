@@ -1,6 +1,6 @@
 MODULES = floatvec
 EXTENSION = floatvec
-EXTENSION_VERSION = 1.1.0
+EXTENSION_VERSION = 1.1.1
 DATA = floatvec--$(EXTENSION_VERSION).sql
 
 REGRESS = setup \

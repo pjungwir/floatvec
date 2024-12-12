@@ -1,4 +1,4 @@
 comment = 'Math for vectors (arrays) of numbers'
-default_version = '1.1.0'
+default_version = '1.1.1'
 module_pathname = '$libdir/floatvec'
 relocatable = true

@@ -1,7 +1,7 @@
 MODULES = floatvec
 EXTENSION = floatvec
 EXTENSION_VERSION = 1.1.1
-DATA = floatvec--$(EXTENSION_VERSION).sql
+DATA = floatvec--$(EXTENSION_VERSION).sql floatvec--1.0.1--1.1.0.sql floatvec--1.1.0--1.1.1.sql
 
 REGRESS = setup \
 					vec_add \
